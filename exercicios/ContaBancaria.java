@@ -15,7 +15,7 @@ public class ContaBancaria {
 
     }
 
-    public  void aplicarJuros(){
+    public void aplicarJuros(){
         saldo += saldo * juros;
     }
     public  void depositar(double valor){
@@ -34,7 +34,7 @@ public class ContaBancaria {
         System.out.println("Titular: " + titular);
         System.out.println("Saldo: R$" + saldo);
         System.out.println("Agencia: " + agencia);
-        System.out.println("Juros: " + juros + " aplicado para o titural" +" "+ titular);
+        System.out.println("Juros: " + juros + " aplicado para o titular" +" "+ titular);
 
     }
 }
