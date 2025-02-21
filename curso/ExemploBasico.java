@@ -6,8 +6,8 @@ package curso;
             String saudacao = "Olá, Mundo!";
             int anoAtual = 2025;
             double pi = 3.14159;
-            boolean isJavaFun = false;
-            int numero = 0;
+            boolean isJavaFun = true;
+            int numero = 10;
             int[] controle = {1, 2, 3, 4, 5};
             int[] teste = new int[5];
     
@@ -31,9 +31,10 @@ package curso;
                 System.out.println("Talvez outro dia.");
             }
 
+
             if (numero == 10) {
                 System.out.println("O número é 10.");
-            } else if (numero > 10) {
+            } else if (numero > 0) {
                 System.out.println("O número é maior que 10.");
             } else {
                 System.out.println("O número é menor que 10.");

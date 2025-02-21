@@ -21,6 +21,9 @@ public class teste1 {
       // Criando outra pessoa chamada Maria com idade válida
       Pessoa p2 = new Pessoa("Maria", 30);
       p2.mostrarDados();
+
+      Pessoa p3 = new Pessoa("Jose", 18);
+      p3.mostrarDados();
   }
     // Classe Pessoa dentro do mesmo arquivo
     static class Pessoa {
@@ -55,7 +58,7 @@ public class teste1 {
                 this.idade = idade;
 
             } else {
-                System.out.println("Idade inválida! Definindo idade como 0.");
+                System.out.println("Sua idade:" + " " + idade + " " + "não é valída");
                 this.idade = 0;
             }
         }
