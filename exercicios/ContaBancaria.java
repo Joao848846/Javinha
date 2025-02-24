@@ -30,6 +30,22 @@ public class ContaBancaria {
         }
     }
 
+    public void transferir(ContaBancaria contaDestino, double valor){
+        if (valor <= saldo) {
+            this.saldo -= valor;
+            contaDestino.depositar(valor);
+            System.out.println("Transferência de R$" + valor + " " + "realizada com sucesso para o titular" + " " + contaDestino.titular);
+        } else {
+            System.out.println("Saldo insuficiente");
+        }
+    }
+
+    public  void receberPix(double valor){
+        saldo += valor;
+     this.depositar(valor);
+     System.out.println("Pix recebido com sucesso");
+    }
+
     public  void  consultar() {
         System.out.println("Titular: " + titular);
         System.out.println("Saldo: R$" + saldo);
